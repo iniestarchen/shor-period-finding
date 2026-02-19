@@ -1,0 +1,33 @@
+{
+  "id": "shor-period-finding",
+  "name": "Shor's Period Finding (N=15, a=7)",
+  "category": "cryptography",
+  "description": "Core period-finding subroutine of Shor's algorithm: find the period r of f(x) = 7^x mod 15.",
+  "long_description": "Shor's algorithm factors integers exponentially faster than any known classical algorithm. The key subroutine is quantum period finding: given f(x) = a^x mod N, find the smallest r such that a^r \u2261 1 (mod N). For a=7, N=15: r=4 (7\u00b9=7, 7\u00b2=4, 7\u00b3=13, 7\u2074=1 mod 15). QPE on the modular exponentiation unitary gives output 0, 2, 4, 6 (multiples of 2^n/r=4). This circuit is a pedagogical simplification; production circuits require full modular exponentiation with ~100 gates for N=15.",
+  "difficulty": "advanced",
+  "qubit_count": 8,
+  "clbit_count": 4,
+  "gate_count": 22,
+  "depth": 14,
+  "tags": [
+    "shor",
+    "factoring",
+    "period-finding",
+    "cryptography",
+    "exponential-speedup"
+  ],
+  "circuit_formats": [
+    "qasm2"
+  ],
+  "source_file": "circuit.qasm",
+  "expected_output": "Evaluation register: 0, 4, 8, or 12 (multiples of 16/4); r=4 from post-processing",
+  "references": [
+    {
+      "title": "Shor, P.W. (1994). Algorithms for Quantum Computation: Discrete Logarithms and Factoring. FOCS '94",
+      "url": "https://doi.org/10.1109/SFCS.1994.365700"
+    }
+  ],
+  "author": "OpenQC Community",
+  "license": "MIT",
+  "version": "1.0.0"
+}
