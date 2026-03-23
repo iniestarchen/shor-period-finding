@@ -1,0 +1,29 @@
+{
+  "slug": "shor-period-finding",
+  "name": "Shor's Period Finding",
+  "version": "1.0.0",
+  "author": "iniestarchen",
+  "license": "Apache-2.0",
+  "description": "Core period-finding subroutine of Shor's algorithm: find the period r of f(x) = 7^x mod 15.",
+  "industries": [
+    "cryptography",
+    "education"
+  ],
+  "techniques": [
+    "gate"
+  ],
+  "difficulty": "advanced",
+  "computation_model": "gate",
+  "algorithm_type": "circuit",
+  "qubit_count": 4,
+  "tags": [
+    "shor",
+    "factoring",
+    "period-finding"
+  ],
+  "access": "open",
+  "source": "official",
+  "metadata": {
+    "year_introduced": 1994
+  }
+}
